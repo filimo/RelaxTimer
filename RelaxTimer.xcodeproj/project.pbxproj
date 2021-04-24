@@ -13,12 +13,14 @@
 		F0CB8BFF26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD226346EBE005A044C /* RelaxTimer.xcdatamodeld */; };
 		F0CB8C0026346EC1005A044C /* RelaxTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */; };
 		F0CB8C0126346EC1005A044C /* RelaxTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */; };
-		F0CB8C0226346EC1005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD526346EBE005A044C /* ContentView.swift */; };
-		F0CB8C0326346EC1005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD526346EBE005A044C /* ContentView.swift */; };
+		F0CB8C0226346EC1005A044C /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD526346EBE005A044C /* CloudKitView.swift */; };
+		F0CB8C0326346EC1005A044C /* CloudKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD526346EBE005A044C /* CloudKitView.swift */; };
 		F0CB8C0426346EC1005A044C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD626346EBE005A044C /* Persistence.swift */; };
 		F0CB8C0526346EC1005A044C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD626346EBE005A044C /* Persistence.swift */; };
 		F0CB8C0626346EC1005A044C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CB8BD726346EC0005A044C /* Assets.xcassets */; };
 		F0CB8C0726346EC1005A044C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CB8BD726346EC0005A044C /* Assets.xcassets */; };
+		F0CB8C2426346F29005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8C2326346F29005A044C /* ContentView.swift */; };
+		F0CB8C2526346F29005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8C2326346F29005A044C /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,7 @@
 /* Begin PBXFileReference section */
 		F0CB8BD326346EBE005A044C /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerApp.swift; sourceTree = "<group>"; };
-		F0CB8BD526346EBE005A044C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0CB8BD526346EBE005A044C /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
 		F0CB8BD626346EBE005A044C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F0CB8BD726346EC0005A044C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CB8BDC26346EC0005A044C /* RelaxTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 		F0CB8BF726346EC1005A044C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CB8BFB26346EC1005A044C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F0CB8BFD26346EC1005A044C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0CB8C2326346F29005A044C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +107,8 @@
 		F0CB8BD126346EBE005A044C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F0CB8C1E26346F19005A044C /* Views */,
 				F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */,
-				F0CB8BD526346EBE005A044C /* ContentView.swift */,
 				F0CB8BD626346EBE005A044C /* Persistence.swift */,
 				F0CB8BD726346EC0005A044C /* Assets.xcassets */,
 				F0CB8BD226346EBE005A044C /* RelaxTimer.xcdatamodeld */,
@@ -157,6 +160,15 @@
 				F0CB8BFD26346EC1005A044C /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		F0CB8C1E26346F19005A044C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F0CB8BD526346EBE005A044C /* CloudKitView.swift */,
+				F0CB8C2326346F29005A044C /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +329,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CB8C0026346EC1005A044C /* RelaxTimerApp.swift in Sources */,
+				F0CB8C2426346F29005A044C /* ContentView.swift in Sources */,
 				F0CB8C0426346EC1005A044C /* Persistence.swift in Sources */,
 				F0CB8BFE26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */,
-				F0CB8C0226346EC1005A044C /* ContentView.swift in Sources */,
+				F0CB8C0226346EC1005A044C /* CloudKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,9 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CB8C0126346EC1005A044C /* RelaxTimerApp.swift in Sources */,
+				F0CB8C2526346F29005A044C /* ContentView.swift in Sources */,
 				F0CB8C0526346EC1005A044C /* Persistence.swift in Sources */,
 				F0CB8BFF26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */,
-				F0CB8C0326346EC1005A044C /* ContentView.swift in Sources */,
+				F0CB8C0326346EC1005A044C /* CloudKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

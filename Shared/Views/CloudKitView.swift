@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CloudKitView.swift
 //  Shared
 //
 //  Created by Viktor Kushnerov on 24.04.21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct CloudKitView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -73,8 +73,8 @@ private let itemFormatter: DateFormatter = {
     return formatter
 }()
 
-struct ContentView_Previews: PreviewProvider {
+struct CloudKitView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        CloudKitView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
