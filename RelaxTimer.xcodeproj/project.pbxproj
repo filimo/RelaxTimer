@@ -21,6 +21,8 @@
 		F0CB8C0726346EC1005A044C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CB8BD726346EC0005A044C /* Assets.xcassets */; };
 		F0CB8C2426346F29005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8C2326346F29005A044C /* ContentView.swift */; };
 		F0CB8C2526346F29005A044C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8C2326346F29005A044C /* ContentView.swift */; };
+		F0CB8C2C26347094005A044C /* Release_iOS_1.0.0001.png in Resources */ = {isa = PBXBuildFile; fileRef = F0CB8C2B26347094005A044C /* Release_iOS_1.0.0001.png */; };
+		F0CB8C2D26347094005A044C /* Release_iOS_1.0.0001.png in Resources */ = {isa = PBXBuildFile; fileRef = F0CB8C2B26347094005A044C /* Release_iOS_1.0.0001.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		F0CB8BFB26346EC1005A044C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F0CB8BFD26346EC1005A044C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0CB8C2326346F29005A044C /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F0CB8C2B26347094005A044C /* Release_iOS_1.0.0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Release_iOS_1.0.0001.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		F0CB8BCC26346EBE005A044C = {
 			isa = PBXGroup;
 			children = (
+				F0CB8C2A26347086005A044C /* Assets */,
 				F0CB8BD126346EBE005A044C /* Shared */,
 				F0CB8BDE26346EC0005A044C /* iOS */,
 				F0CB8BE526346EC1005A044C /* macOS */,
@@ -169,6 +173,14 @@
 				F0CB8C2326346F29005A044C /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F0CB8C2A26347086005A044C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F0CB8C2B26347094005A044C /* Release_iOS_1.0.0001.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CB8C2C26347094005A044C /* Release_iOS_1.0.0001.png in Resources */,
 				F0CB8C0626346EC1005A044C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CB8C2D26347094005A044C /* Release_iOS_1.0.0001.png in Resources */,
 				F0CB8C0726346EC1005A044C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,6 +511,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
 				DEVELOPMENT_TEAM = B6QRXW5YF2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -519,6 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
 				DEVELOPMENT_TEAM = B6QRXW5YF2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
