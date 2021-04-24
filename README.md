@@ -1,6 +1,6 @@
 # RelaxTimer
 
-Timer for progressive muscle relaxation.
+### Timer for progressive muscle relaxation.
 
 [Relaxation Techniques for Health](https://www.nccih.nih.gov/health/relaxation-techniques-for-health)
 
