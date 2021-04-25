@@ -10,7 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var downCounter = 0
-    @State var duration: Double = 7
+    
+    
+    @State var shortTime: Int = 7
+    @State var longTime: Int = 14
+    @State var counter: Int = 5
 
     @State var timerPublisher = Timer.publish(
         every: 7,
@@ -23,7 +27,7 @@ struct ContentView: View {
             if isStart {
                 UIApplication.shared.isIdleTimerDisabled = true
                 timerPublisher = Timer.publish(
-                    every: duration,
+                    every: Double(shortTime),
                     on: .main,
                     in: .common
                 ).autoconnect()
@@ -42,11 +46,21 @@ struct ContentView: View {
     }
 
     var body: some View {
-        HStack {
-            startButton
-            stopButton
+        NavigationView {
+            HStack {
+                startButton
+                stopButton
+            }
+            .onReceive(timerPublisher, perform: onReceiveTimerPublisher)
+            .toolbar(content: {
+                NavigationLink(
+                    destination: SettingsView(shortTime: $shortTime, longTime: $longTime, counter: $counter),
+                    label: {
+                        Image(systemName: "gear")
+                    })
+            })
         }
-        .onReceive(timerPublisher, perform: onReceiveTimerPublisher)
+        
     }
 
     private var stopButton: some View {
@@ -76,7 +90,7 @@ struct ContentView: View {
         // https://iphonedev.wiki/index.php/AudioServices
         AudioServicesPlaySystemSound(inSystemSoundID)
     }
-    
+
     func onReceiveTimerPublisher(_: Date) {
         if isStart {
             if downCounter == 0 {
