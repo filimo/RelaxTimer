@@ -10,16 +10,23 @@ import SwiftUI
 
 struct ContentView: View {
     @State var downCounter = 0
+    @State var duration: Double = 7
+
     @State var timerPublisher = Timer.publish(
         every: 7,
-        on: .current,
+        on: .main,
         in: .common
     ).autoconnect()
+
     @State var isStart = false {
         didSet {
             if isStart {
                 UIApplication.shared.isIdleTimerDisabled = true
-                timerPublisher = timerPublisher.upstream.autoconnect()
+                timerPublisher = Timer.publish(
+                    every: duration,
+                    on: .main,
+                    in: .common
+                ).autoconnect()
             } else {
                 UIApplication.shared.isIdleTimerDisabled = false
                 timerPublisher.upstream.connect().cancel()
@@ -30,31 +37,16 @@ struct ContentView: View {
     private let generator = UINotificationFeedbackGenerator()
 
     init() {
+        timerPublisher.upstream.connect().cancel()
         generator.prepare()
     }
 
     var body: some View {
         HStack {
             startButton
-
             stopButton
         }
-        .onReceive(timerPublisher, perform: { _ in
-            if isStart {
-                if downCounter == 0 {
-                    notify(1023)
-                } else if [1, 3, 4, 6, 7, 9, 10, 12, 13].contains(downCounter) {
-                    notify(1005)
-                } else {
-                    if downCounter == 15 {
-                        isStart = false
-                        notify(1021)
-                    }
-                }
-
-                downCounter += 1
-            }
-        })
+        .onReceive(timerPublisher, perform: onReceiveTimerPublisher)
     }
 
     private var stopButton: some View {
@@ -63,8 +55,6 @@ struct ContentView: View {
         }
         .foregroundColor(isStart ? .orange : .gray)
         .font(.title)
-        .padding()
-        .border(Color.black)
         .padding()
         .disabled(isStart == false)
     }
@@ -77,8 +67,6 @@ struct ContentView: View {
         .foregroundColor(isStart ? .gray : .green)
         .font(.title)
         .padding()
-        .border(Color.black)
-        .padding()
         .disabled(isStart)
     }
 
@@ -87,6 +75,23 @@ struct ContentView: View {
 
         // https://iphonedev.wiki/index.php/AudioServices
         AudioServicesPlaySystemSound(inSystemSoundID)
+    }
+    
+    func onReceiveTimerPublisher(_: Date) {
+        if isStart {
+            if downCounter == 0 {
+                notify(1023)
+            } else if [1, 3, 4, 6, 7, 9, 10, 12, 13].contains(downCounter) {
+                notify(1005)
+            } else {
+                if downCounter == 15 {
+                    isStart = false
+                    notify(1021)
+                }
+            }
+
+            downCounter += 1
+        }
     }
 }
 
