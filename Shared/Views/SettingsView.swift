@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @Binding var shortTime: Int
-    @Binding var longTime: Int
-    @Binding var counter: Int
-
+    @ObservedObject var store = Store.shared
+    
     var body: some View {
         Form {
             Section {
-                picker(label: "Short time", value: $shortTime)
-                picker(label: "Long time", value: $longTime)
-                picker(label: "Counter", value: $counter)
+                picker(label: "Short time", value: $store.shortTimer)
+                picker(label: "Long time", value: $store.longTimer)
+                picker(label: "Counter", value: $store.phaseCounter)
             }
         }
     }
@@ -41,6 +39,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView_Previews.previews
+        SettingsView()
     }
 }

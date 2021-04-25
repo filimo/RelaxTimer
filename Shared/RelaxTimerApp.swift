@@ -15,7 +15,7 @@ struct RelaxTimerApp: App {
         WindowGroup {
 //            CloudKitView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            SettingsView_Previews.previews
+            ContentView()
         }
     }
 }

@@ -9,15 +9,15 @@ import Combine
 import SwiftUI
 
 struct ContentView: View {
-    @State var downCounter = 0
-    
-    
-    @State var shortTime: Int = 7
-    @State var longTime: Int = 14
-    @State var counter: Int = 5
+    @ObservedObject var store = Store.shared
+
+    @State var timeCounter: Int = 0
+    @State var shortTimer: Int = 0
+    @State var longTimer: Int = 0
+    @State var isLongTime = false
 
     @State var timerPublisher = Timer.publish(
-        every: 7,
+        every: 1,
         on: .main,
         in: .common
     ).autoconnect()
@@ -25,12 +25,13 @@ struct ContentView: View {
     @State var isStart = false {
         didSet {
             if isStart {
+                timeCounter = 0
+                shortTimer = 0
+                longTimer = 0
+                isLongTime = false
+
                 UIApplication.shared.isIdleTimerDisabled = true
-                timerPublisher = Timer.publish(
-                    every: Double(shortTime),
-                    on: .main,
-                    in: .common
-                ).autoconnect()
+                timerPublisher = timerPublisher.upstream.autoconnect()
             } else {
                 UIApplication.shared.isIdleTimerDisabled = false
                 timerPublisher.upstream.connect().cancel()
@@ -54,13 +55,13 @@ struct ContentView: View {
             .onReceive(timerPublisher, perform: onReceiveTimerPublisher)
             .toolbar(content: {
                 NavigationLink(
-                    destination: SettingsView(shortTime: $shortTime, longTime: $longTime, counter: $counter),
+                    destination: SettingsView(),
                     label: {
                         Image(systemName: "gear")
-                    })
+                    }
+                )
             })
         }
-        
     }
 
     private var stopButton: some View {
@@ -75,7 +76,6 @@ struct ContentView: View {
 
     private var startButton: some View {
         Button("Start") {
-            downCounter = 0
             isStart = true
         }
         .foregroundColor(isStart ? .gray : .green)
@@ -93,18 +93,28 @@ struct ContentView: View {
 
     func onReceiveTimerPublisher(_: Date) {
         if isStart {
-            if downCounter == 0 {
-                notify(1023)
-            } else if [1, 3, 4, 6, 7, 9, 10, 12, 13].contains(downCounter) {
-                notify(1005)
-            } else {
-                if downCounter == 15 {
-                    isStart = false
-                    notify(1021)
-                }
-            }
+            timeCounter += 1
 
-            downCounter += 1
+            if longTimer == store.phaseCounter {
+                print("stop")
+                isStart = false
+                notify(1021)
+            } else if timeCounter == 1, shortTimer == 0 {
+                print("start")
+                notify(1023)
+            } else if timeCounter.isMultiple(of: store.shortTimer), isLongTime == false {
+                isLongTime = true
+                shortTimer += 1
+                timeCounter = 0
+                notify(1005)
+                print("shortTimer \(shortTimer)")
+            } else if timeCounter.isMultiple(of: store.longTimer), isLongTime {
+                isLongTime = false
+                longTimer += 1
+                timeCounter = 0
+                notify(1005)
+                print("longTimer \(longTimer)")
+            }
         }
     }
 }
