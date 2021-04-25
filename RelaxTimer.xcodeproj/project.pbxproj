@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F038A7302635445300B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A72F2635445300B599BD /* Release_iOS_1.0.0001.jpeg */; };
-		F038A7312635445300B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A72F2635445300B599BD /* Release_iOS_1.0.0001.jpeg */; };
 		F038A73B2635447000B599BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F038A73A2635447000B599BD /* README.md */; };
 		F038A73C2635447000B599BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F038A73A2635447000B599BD /* README.md */; };
 		F038A74626354EBB00B599BD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A74526354EBB00B599BD /* SettingsView.swift */; };
@@ -17,6 +15,8 @@
 		F038A75E26355A7800B599BD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A75C26355A7800B599BD /* Store.swift */; };
 		F038A7652635632200B599BD /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
 		F038A7662635632200B599BD /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
+		F038A77026356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
+		F038A77126356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
 		F0CB8BF126346EC1005A044C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BF026346EC1005A044C /* Tests_iOS.swift */; };
 		F0CB8BFC26346EC1005A044C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BFB26346EC1005A044C /* Tests_macOS.swift */; };
 		F0CB8BFE26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD226346EBE005A044C /* RelaxTimer.xcdatamodeld */; };
@@ -51,11 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F038A72F2635445300B599BD /* Release_iOS_1.0.0001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Release_iOS_1.0.0001.jpeg; sourceTree = "<group>"; };
 		F038A73A2635447000B599BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F038A74526354EBB00B599BD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F038A75C26355A7800B599BD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F038A7642635632200B599BD /* Published.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Published.swift; sourceTree = "<group>"; };
+		F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Release_iOS_1.0.0001.jpeg; sourceTree = "<group>"; };
 		F0CB8BD326346EBE005A044C /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerApp.swift; sourceTree = "<group>"; };
 		F0CB8BD526346EBE005A044C /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -210,7 +210,7 @@
 		F0CB8C2A26347086005A044C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F038A72F2635445300B599BD /* Release_iOS_1.0.0001.jpeg */,
+				F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -339,8 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F038A77026356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F038A73B2635447000B599BD /* README.md in Resources */,
-				F038A7302635445300B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F0CB8C0626346EC1005A044C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,8 +349,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F038A77126356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F038A73C2635447000B599BD /* README.md in Resources */,
-				F038A7312635445300B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F0CB8C0726346EC1005A044C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
