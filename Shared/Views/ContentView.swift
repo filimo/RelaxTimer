@@ -25,7 +25,7 @@ struct ContentView: View {
     @State var isStart = false {
         didSet {
             if isStart {
-                timeCounter = 0
+                timeCounter = -4
                 shortTimer = 0
                 longTimer = 0
                 isLongTime = false

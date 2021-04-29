@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject var store = Store.shared
-    
+
     var body: some View {
         Form {
             Section {
@@ -22,18 +22,22 @@ struct SettingsView: View {
 
     private func picker<T>(
         label: String,
-        value: Binding<T>) -> some View where T: Hashable, T: _FormatSpecifiable
-    {
-        HStack {
-            Text(label)
-            Spacer()
-            Picker("\(value.wrappedValue)", selection: value) {
-                ForEach(1 ... 60, id: \.self) {
-                    Text("\($0)").tag(Optional($0))
-                }
+        value: Binding<T>
+    ) -> some View where T: Hashable, T: _FormatSpecifiable {
+        Picker(
+            selection: value,
+            label: HStack {
+                Text(label)
+                Spacer()
+                Text("\(value.wrappedValue)")
             }
-            .pickerStyle(MenuPickerStyle())
+
+        ) {
+            ForEach(5 ... 60, id: \.self) {
+                Text("\($0)").tag(Optional($0))
+            }
         }
+        .pickerStyle(MenuPickerStyle())
     }
 }
 
