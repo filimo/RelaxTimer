@@ -18,6 +18,7 @@ struct ContentView: View {
             print("timer status", timerStatus, Date())
 
             if timerStatus == .stop {
+                UIApplication.shared.isIdleTimerDisabled = false
                 counter = 0
                 timerPublisher = nil
                 notify(1021)
@@ -26,6 +27,7 @@ struct ContentView: View {
 
             if timerStatus == .beforeStart {
                 generator.prepare()
+                UIApplication.shared.isIdleTimerDisabled = true
             }
 
             timerPublisher =
