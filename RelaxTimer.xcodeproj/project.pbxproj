@@ -17,6 +17,7 @@
 		F038A7662635632200B599BD /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
 		F038A77026356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
 		F038A77126356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
+		F052E1CF263C18B6006488FE /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E1CE263C18B6006488FE /* TimerStatus.swift */; };
 		F0CB8BF126346EC1005A044C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BF026346EC1005A044C /* Tests_iOS.swift */; };
 		F0CB8BFC26346EC1005A044C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BFB26346EC1005A044C /* Tests_macOS.swift */; };
 		F0CB8BFE26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD226346EBE005A044C /* RelaxTimer.xcdatamodeld */; };
@@ -56,6 +57,7 @@
 		F038A75C26355A7800B599BD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F038A7642635632200B599BD /* Published.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Published.swift; sourceTree = "<group>"; };
 		F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Release_iOS_1.0.0001.jpeg; sourceTree = "<group>"; };
+		F052E1CE263C18B6006488FE /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
 		F0CB8BD326346EBE005A044C /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerApp.swift; sourceTree = "<group>"; };
 		F0CB8BD526346EBE005A044C /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -123,11 +125,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F052E1CD263C18A0006488FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F052E1CE263C18B6006488FE /* TimerStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F0CB8BCC26346EBE005A044C = {
 			isa = PBXGroup;
 			children = (
 				F038A73A2635447000B599BD /* README.md */,
 				F0CB8C2A26347086005A044C /* Assets */,
+				F052E1CD263C18A0006488FE /* Model */,
 				F038A74C26355A4D00B599BD /* Stores */,
 				F038A763263562F000B599BD /* Extensions */,
 				F0CB8BD126346EBE005A044C /* Shared */,
@@ -378,6 +389,7 @@
 			files = (
 				F038A75D26355A7800B599BD /* Store.swift in Sources */,
 				F0CB8C0026346EC1005A044C /* RelaxTimerApp.swift in Sources */,
+				F052E1CF263C18B6006488FE /* TimerStatus.swift in Sources */,
 				F038A7652635632200B599BD /* Published.swift in Sources */,
 				F0CB8C2426346F29005A044C /* ContentView.swift in Sources */,
 				F0CB8C0426346EC1005A044C /* Persistence.swift in Sources */,

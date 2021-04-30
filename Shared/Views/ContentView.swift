@@ -11,40 +11,39 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var store = Store.shared
 
-    @State var timeCounter: Int = 0
-    @State var shortTimer: Int = 0
-    @State var longTimer: Int = 0
-    @State var isLongTime = false
+    @State var counter: Int = 0
 
-    @State var timerPublisher = Timer.publish(
-        every: 1,
-        on: .main,
-        in: .common
-    ).autoconnect()
-
-    @State var isStart = false {
+    @State var timerStatus: TimerStatus = .beforeStart {
         didSet {
-            if isStart {
-                timeCounter = -4
-                shortTimer = 0
-                longTimer = 0
-                isLongTime = false
+            print("timer status", timerStatus, Date())
 
-                UIApplication.shared.isIdleTimerDisabled = true
-                timerPublisher = timerPublisher.upstream.autoconnect()
-            } else {
-                UIApplication.shared.isIdleTimerDisabled = false
-                timerPublisher.upstream.connect().cancel()
+            if timerStatus == .stop {
+                counter = 0
+                timerPublisher = nil
+                notify(1021)
+                return
             }
+
+            if timerStatus == .beforeStart {
+                generator.prepare()
+            }
+
+            timerPublisher =
+                Timer.publish(
+                    every: Double(timerStatus.seconds),
+                    on: .main,
+                    in: .common
+                )
+                .autoconnect()
+                .sink(receiveValue: onReceiveTimerPublisher)
         }
     }
 
+    @State var timerPublisher: Cancellable? = nil
+
     private let generator = UINotificationFeedbackGenerator()
 
-    init() {
-        timerPublisher.upstream.connect().cancel()
-        generator.prepare()
-    }
+    var isStart: Bool { timerPublisher != nil }
 
     var body: some View {
         NavigationView {
@@ -52,7 +51,6 @@ struct ContentView: View {
                 startButton
                 stopButton
             }
-            .onReceive(timerPublisher, perform: onReceiveTimerPublisher)
             .toolbar(content: {
                 NavigationLink(
                     destination: SettingsView(),
@@ -66,7 +64,8 @@ struct ContentView: View {
 
     private var stopButton: some View {
         Button("Stop") {
-            isStart = false
+            timerStatus = .stop
+            UIApplication.shared.isIdleTimerDisabled = false
         }
         .foregroundColor(isStart ? .orange : .gray)
         .font(.title)
@@ -76,7 +75,7 @@ struct ContentView: View {
 
     private var startButton: some View {
         Button("Start") {
-            isStart = true
+            timerStatus = .beforeStart
         }
         .foregroundColor(isStart ? .gray : .green)
         .font(.title)
@@ -93,27 +92,24 @@ struct ContentView: View {
 
     func onReceiveTimerPublisher(_: Date) {
         if isStart {
-            timeCounter += 1
-
-            if longTimer == store.phaseCounter {
-                print("stop")
-                isStart = false
-                notify(1021)
-            } else if timeCounter == 1, shortTimer == 0 {
-                print("start")
+            switch timerStatus {
+            case .stop:
+                return
+            case .beforeStart:
                 notify(1023)
-            } else if timeCounter.isMultiple(of: store.shortTimer), isLongTime == false {
-                isLongTime = true
-                shortTimer += 1
-                timeCounter = 0
+                timerStatus = .shortTime
+            case .shortTime:
                 notify(1005)
-                print("shortTimer \(shortTimer)")
-            } else if timeCounter.isMultiple(of: store.longTimer), isLongTime {
-                isLongTime = false
-                longTimer += 1
-                timeCounter = 0
-                notify(1005)
-                print("longTimer \(longTimer)")
+                timerStatus = .longTime
+            case .longTime:
+                counter += 1
+                print("counter:", counter)
+                if counter == 5 {
+                    timerStatus = .stop
+                } else {
+                    notify(1005)
+                    timerStatus = .shortTime
+                }
             }
         }
     }
