@@ -15,9 +15,24 @@
 		F038A75E26355A7800B599BD /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A75C26355A7800B599BD /* Store.swift */; };
 		F038A7652635632200B599BD /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
 		F038A7662635632200B599BD /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
-		F038A77026356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
-		F038A77126356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */; };
 		F052E1CF263C18B6006488FE /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E1CE263C18B6006488FE /* TimerStatus.swift */; };
+		F052E225263FD863006488FE /* RelaxTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F052E224263FD863006488FE /* RelaxTimer WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F052E22A263FD865006488FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F052E229263FD865006488FE /* Assets.xcassets */; };
+		F052E231263FD865006488FE /* RelaxTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F052E230263FD865006488FE /* RelaxTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F052E236263FD865006488FE /* RelaxTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E235263FD865006488FE /* RelaxTimerApp.swift */; };
+		F052E238263FD865006488FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E237263FD865006488FE /* ContentView.swift */; };
+		F052E23A263FD865006488FE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E239263FD865006488FE /* NotificationController.swift */; };
+		F052E23C263FD865006488FE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E23B263FD865006488FE /* NotificationView.swift */; };
+		F052E23E263FD865006488FE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E23D263FD865006488FE /* ComplicationController.swift */; };
+		F052E240263FD866006488FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F052E23F263FD866006488FE /* Assets.xcassets */; };
+		F052E243263FD866006488FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F052E242263FD866006488FE /* Preview Assets.xcassets */; };
+		F052E24F263FD866006488FE /* RelaxTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E24E263FD866006488FE /* RelaxTimerTests.swift */; };
+		F052E25A263FD866006488FE /* RelaxTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E259263FD866006488FE /* RelaxTimerUITests.swift */; };
+		F08DC127263FFD600055646C /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08DC126263FFD600055646C /* TimerManager.swift */; };
+		F08DC1282640794E0055646C /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F052E1CE263C18B6006488FE /* TimerStatus.swift */; };
+		F08DC1292640795F0055646C /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A75C26355A7800B599BD /* Store.swift */; };
+		F08DC12A2640796C0055646C /* Published.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A7642635632200B599BD /* Published.swift */; };
+		F08DC12B26407CCC0055646C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038A74526354EBB00B599BD /* SettingsView.swift */; };
 		F0CB8BF126346EC1005A044C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BF026346EC1005A044C /* Tests_iOS.swift */; };
 		F0CB8BFC26346EC1005A044C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BFB26346EC1005A044C /* Tests_macOS.swift */; };
 		F0CB8BFE26346EC1005A044C /* RelaxTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F0CB8BD226346EBE005A044C /* RelaxTimer.xcdatamodeld */; };
@@ -35,6 +50,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F052E226263FD863006488FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CB8BCD26346EBE005A044C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052E223263FD863006488FE;
+			remoteInfo = "RelaxTimer WatchKit App";
+		};
+		F052E232263FD865006488FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CB8BCD26346EBE005A044C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052E22F263FD865006488FE;
+			remoteInfo = "RelaxTimer WatchKit Extension";
+		};
+		F052E24B263FD866006488FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CB8BCD26346EBE005A044C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052E22F263FD865006488FE;
+			remoteInfo = "RelaxTimer WatchKit Extension";
+		};
+		F052E256263FD866006488FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0CB8BCD26346EBE005A044C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F052E223263FD863006488FE;
+			remoteInfo = "RelaxTimer WatchKit App";
+		};
 		F0CB8BED26346EC1005A044C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F0CB8BCD26346EBE005A044C /* Project object */;
@@ -51,13 +94,61 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F052E25E263FD866006488FE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F052E225263FD863006488FE /* RelaxTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E261263FD866006488FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F052E231263FD865006488FE /* RelaxTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		F038A73A2635447000B599BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F038A74526354EBB00B599BD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F038A75C26355A7800B599BD /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F038A7642635632200B599BD /* Published.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Published.swift; sourceTree = "<group>"; };
-		F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Release_iOS_1.0.0001.jpeg; sourceTree = "<group>"; };
 		F052E1CE263C18B6006488FE /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
+		F052E221263FD863006488FE /* RelaxTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F052E224263FD863006488FE /* RelaxTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RelaxTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F052E229263FD865006488FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F052E22B263FD865006488FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F052E230263FD865006488FE /* RelaxTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RelaxTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F052E235263FD865006488FE /* RelaxTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerApp.swift; sourceTree = "<group>"; };
+		F052E237263FD865006488FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F052E239263FD865006488FE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F052E23B263FD865006488FE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		F052E23D263FD865006488FE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F052E23F263FD866006488FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F052E242263FD866006488FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F052E244263FD866006488FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F052E245263FD866006488FE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F052E24A263FD866006488FE /* RelaxTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F052E24E263FD866006488FE /* RelaxTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerTests.swift; sourceTree = "<group>"; };
+		F052E250263FD866006488FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F052E255263FD866006488FE /* RelaxTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F052E259263FD866006488FE /* RelaxTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerUITests.swift; sourceTree = "<group>"; };
+		F052E25B263FD866006488FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08DC126263FFD600055646C /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		F08DC12C264081150055646C /* Release_watchOS_1.0.0001_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Release_watchOS_1.0.0001_2.png; sourceTree = "<group>"; };
+		F08DC12D264081150055646C /* Release_watchOS_1.0.0001_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Release_watchOS_1.0.0001_1.png; sourceTree = "<group>"; };
+		F08DC130264084700055646C /* Release_iOS_1.0.0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Release_iOS_1.0.0001.png; sourceTree = "<group>"; };
 		F0CB8BD326346EBE005A044C /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		F0CB8BD426346EBE005A044C /* RelaxTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxTimerApp.swift; sourceTree = "<group>"; };
 		F0CB8BD526346EBE005A044C /* CloudKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitView.swift; sourceTree = "<group>"; };
@@ -78,6 +169,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F052E22D263FD865006488FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E247263FD866006488FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E252263FD866006488FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0CB8BD926346EC0005A044C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +245,58 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		F052E228263FD863006488FE /* RelaxTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F052E229263FD865006488FE /* Assets.xcassets */,
+				F052E22B263FD865006488FE /* Info.plist */,
+			);
+			path = "RelaxTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		F052E234263FD865006488FE /* RelaxTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F052E235263FD865006488FE /* RelaxTimerApp.swift */,
+				F052E237263FD865006488FE /* ContentView.swift */,
+				F052E239263FD865006488FE /* NotificationController.swift */,
+				F052E23B263FD865006488FE /* NotificationView.swift */,
+				F052E23D263FD865006488FE /* ComplicationController.swift */,
+				F08DC126263FFD600055646C /* TimerManager.swift */,
+				F052E23F263FD866006488FE /* Assets.xcassets */,
+				F052E244263FD866006488FE /* Info.plist */,
+				F052E245263FD866006488FE /* PushNotificationPayload.apns */,
+				F052E241263FD866006488FE /* Preview Content */,
+			);
+			path = "RelaxTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F052E241263FD866006488FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F052E242263FD866006488FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F052E24D263FD866006488FE /* RelaxTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F052E24E263FD866006488FE /* RelaxTimerTests.swift */,
+				F052E250263FD866006488FE /* Info.plist */,
+			);
+			path = RelaxTimerTests;
+			sourceTree = "<group>";
+		};
+		F052E258263FD866006488FE /* RelaxTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F052E259263FD866006488FE /* RelaxTimerUITests.swift */,
+				F052E25B263FD866006488FE /* Info.plist */,
+			);
+			path = RelaxTimerUITests;
+			sourceTree = "<group>";
+		};
 		F0CB8BCC26346EBE005A044C = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +310,10 @@
 				F0CB8BE526346EC1005A044C /* macOS */,
 				F0CB8BEF26346EC1005A044C /* Tests iOS */,
 				F0CB8BFA26346EC1005A044C /* Tests macOS */,
+				F052E228263FD863006488FE /* RelaxTimer WatchKit App */,
+				F052E234263FD865006488FE /* RelaxTimer WatchKit Extension */,
+				F052E24D263FD866006488FE /* RelaxTimerTests */,
+				F052E258263FD866006488FE /* RelaxTimerUITests */,
 				F0CB8BDD26346EC0005A044C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -169,6 +337,11 @@
 				F0CB8BE426346EC1005A044C /* RelaxTimer.app */,
 				F0CB8BEC26346EC1005A044C /* Tests iOS.xctest */,
 				F0CB8BF726346EC1005A044C /* Tests macOS.xctest */,
+				F052E221263FD863006488FE /* RelaxTimer.app */,
+				F052E224263FD863006488FE /* RelaxTimer WatchKit App.app */,
+				F052E230263FD865006488FE /* RelaxTimer WatchKit Extension.appex */,
+				F052E24A263FD866006488FE /* RelaxTimerTests.xctest */,
+				F052E255263FD866006488FE /* RelaxTimerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,9 +384,9 @@
 		F0CB8C1E26346F19005A044C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F0CB8BD526346EBE005A044C /* CloudKitView.swift */,
 				F0CB8C2326346F29005A044C /* ContentView.swift */,
 				F038A74526354EBB00B599BD /* SettingsView.swift */,
+				F0CB8BD526346EBE005A044C /* CloudKitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,7 +394,9 @@
 		F0CB8C2A26347086005A044C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				F038A76F26356A6E00B599BD /* Release_iOS_1.0.0001.jpeg */,
+				F08DC130264084700055646C /* Release_iOS_1.0.0001.png */,
+				F08DC12D264081150055646C /* Release_watchOS_1.0.0001_1.png */,
+				F08DC12C264081150055646C /* Release_watchOS_1.0.0001_2.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -229,6 +404,93 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F052E220263FD863006488FE /* RelaxTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F052E26A263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer" */;
+			buildPhases = (
+				F052E21F263FD863006488FE /* Resources */,
+				F052E25E263FD866006488FE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F052E227263FD863006488FE /* PBXTargetDependency */,
+			);
+			name = RelaxTimer;
+			productName = RelaxTimer;
+			productReference = F052E221263FD863006488FE /* RelaxTimer.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		F052E223263FD863006488FE /* RelaxTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F052E269263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer WatchKit App" */;
+			buildPhases = (
+				F052E222263FD863006488FE /* Resources */,
+				F052E261263FD866006488FE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F052E233263FD865006488FE /* PBXTargetDependency */,
+			);
+			name = "RelaxTimer WatchKit App";
+			productName = "RelaxTimer WatchKit App";
+			productReference = F052E224263FD863006488FE /* RelaxTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F052E22F263FD865006488FE /* RelaxTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F052E268263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer WatchKit Extension" */;
+			buildPhases = (
+				F052E22C263FD865006488FE /* Sources */,
+				F052E22D263FD865006488FE /* Frameworks */,
+				F052E22E263FD865006488FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RelaxTimer WatchKit Extension";
+			productName = "RelaxTimer WatchKit Extension";
+			productReference = F052E230263FD865006488FE /* RelaxTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		F052E249263FD866006488FE /* RelaxTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F052E26B263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimerTests" */;
+			buildPhases = (
+				F052E246263FD866006488FE /* Sources */,
+				F052E247263FD866006488FE /* Frameworks */,
+				F052E248263FD866006488FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F052E24C263FD866006488FE /* PBXTargetDependency */,
+			);
+			name = RelaxTimerTests;
+			productName = RelaxTimerTests;
+			productReference = F052E24A263FD866006488FE /* RelaxTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F052E254263FD866006488FE /* RelaxTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F052E26C263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimerUITests" */;
+			buildPhases = (
+				F052E251263FD866006488FE /* Sources */,
+				F052E252263FD866006488FE /* Frameworks */,
+				F052E253263FD866006488FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F052E257263FD866006488FE /* PBXTargetDependency */,
+			);
+			name = RelaxTimerUITests;
+			productName = RelaxTimerUITests;
+			productReference = F052E255263FD866006488FE /* RelaxTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		F0CB8BDB26346EC0005A044C /* RelaxTimer (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0CB8C0A26346EC1005A044C /* Build configuration list for PBXNativeTarget "RelaxTimer (iOS)" */;
@@ -305,9 +567,26 @@
 		F0CB8BCD26346EBE005A044C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					F052E220263FD863006488FE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F052E223263FD863006488FE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F052E22F263FD865006488FE = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					F052E249263FD866006488FE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F052E22F263FD865006488FE;
+					};
+					F052E254263FD866006488FE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F052E223263FD863006488FE;
+					};
 					F0CB8BDB26346EC0005A044C = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -341,16 +620,58 @@
 				F0CB8BE326346EC1005A044C /* RelaxTimer (macOS) */,
 				F0CB8BEB26346EC1005A044C /* Tests iOS */,
 				F0CB8BF626346EC1005A044C /* Tests macOS */,
+				F052E220263FD863006488FE /* RelaxTimer */,
+				F052E223263FD863006488FE /* RelaxTimer WatchKit App */,
+				F052E22F263FD865006488FE /* RelaxTimer WatchKit Extension */,
+				F052E249263FD866006488FE /* RelaxTimerTests */,
+				F052E254263FD866006488FE /* RelaxTimerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F052E21F263FD863006488FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E222263FD863006488FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F052E22A263FD865006488FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E22E263FD865006488FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F052E243263FD866006488FE /* Preview Assets.xcassets in Resources */,
+				F052E240263FD866006488FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E248263FD866006488FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E253263FD866006488FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0CB8BDA26346EC0005A044C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F038A77026356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F038A73B2635447000B599BD /* README.md in Resources */,
 				F0CB8C0626346EC1005A044C /* Assets.xcassets in Resources */,
 			);
@@ -360,7 +681,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F038A77126356A6E00B599BD /* Release_iOS_1.0.0001.jpeg in Resources */,
 				F038A73C2635447000B599BD /* README.md in Resources */,
 				F0CB8C0726346EC1005A044C /* Assets.xcassets in Resources */,
 			);
@@ -383,6 +703,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F052E22C263FD865006488FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F052E23A263FD865006488FE /* NotificationController.swift in Sources */,
+				F052E238263FD865006488FE /* ContentView.swift in Sources */,
+				F052E23E263FD865006488FE /* ComplicationController.swift in Sources */,
+				F08DC1292640795F0055646C /* Store.swift in Sources */,
+				F08DC12A2640796C0055646C /* Published.swift in Sources */,
+				F08DC12B26407CCC0055646C /* SettingsView.swift in Sources */,
+				F052E236263FD865006488FE /* RelaxTimerApp.swift in Sources */,
+				F08DC1282640794E0055646C /* TimerStatus.swift in Sources */,
+				F052E23C263FD865006488FE /* NotificationView.swift in Sources */,
+				F08DC127263FFD600055646C /* TimerManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E246263FD866006488FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F052E24F263FD866006488FE /* RelaxTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F052E251263FD866006488FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F052E25A263FD866006488FE /* RelaxTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0CB8BD826346EC0005A044C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +786,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F052E227263FD863006488FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F052E223263FD863006488FE /* RelaxTimer WatchKit App */;
+			targetProxy = F052E226263FD863006488FE /* PBXContainerItemProxy */;
+		};
+		F052E233263FD865006488FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F052E22F263FD865006488FE /* RelaxTimer WatchKit Extension */;
+			targetProxy = F052E232263FD865006488FE /* PBXContainerItemProxy */;
+		};
+		F052E24C263FD866006488FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F052E22F263FD865006488FE /* RelaxTimer WatchKit Extension */;
+			targetProxy = F052E24B263FD866006488FE /* PBXContainerItemProxy */;
+		};
+		F052E257263FD866006488FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F052E223263FD863006488FE /* RelaxTimer WatchKit App */;
+			targetProxy = F052E256263FD866006488FE /* PBXContainerItemProxy */;
+		};
 		F0CB8BEE26346EC1005A044C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F0CB8BDB26346EC0005A044C /* RelaxTimer (iOS) */;
@@ -446,6 +819,221 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F052E25C263FD866006488FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F052E25D263FD866006488FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F052E25F263FD866006488FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				IBSC_MODULE = RelaxTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "RelaxTimer WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		F052E260263FD866006488FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				IBSC_MODULE = RelaxTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "RelaxTimer WatchKit App/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		F052E262263FD866006488FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_ASSET_PATHS = "\"RelaxTimer WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RelaxTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		F052E263263FD866006488FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0001;
+				DEVELOPMENT_ASSET_PATHS = "\"RelaxTimer WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RelaxTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		F052E264263FD866006488FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				INFOPLIST_FILE = RelaxTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxTimer WatchKit Extension.appex/RelaxTimer WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		F052E265263FD866006488FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				INFOPLIST_FILE = RelaxTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxTimer WatchKit Extension.appex/RelaxTimer WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		F052E266263FD866006488FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				INFOPLIST_FILE = RelaxTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RelaxTimer WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		F052E267263FD866006488FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B6QRXW5YF2;
+				INFOPLIST_FILE = RelaxTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.filimo.RelaxTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "RelaxTimer WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 		F0CB8C0826346EC1005A044C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -613,6 +1201,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0001;
 				DEVELOPMENT_TEAM = B6QRXW5YF2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -638,6 +1227,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0001;
 				DEVELOPMENT_TEAM = B6QRXW5YF2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -746,6 +1336,51 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F052E268263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F052E262263FD866006488FE /* Debug */,
+				F052E263263FD866006488FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F052E269263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F052E25F263FD866006488FE /* Debug */,
+				F052E260263FD866006488FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F052E26A263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F052E25C263FD866006488FE /* Debug */,
+				F052E25D263FD866006488FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F052E26B263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F052E264263FD866006488FE /* Debug */,
+				F052E265263FD866006488FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F052E26C263FD866006488FE /* Build configuration list for PBXNativeTarget "RelaxTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F052E266263FD866006488FE /* Debug */,
+				F052E267263FD866006488FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F0CB8BD026346EBE005A044C /* Build configuration list for PBXProject "RelaxTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

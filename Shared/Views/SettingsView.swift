@@ -10,14 +10,21 @@ import SwiftUI
 struct SettingsView: View {
     @ObservedObject var store = Store.shared
 
+    private var pickerStyle: some PickerStyle {
+        #if os(watchOS)
+        DefaultPickerStyle()
+        #else
+        MenuPickerStyle()
+        #endif
+    }
+
     var body: some View {
         Form {
-            Section {
-                picker(label: "Short time", value: $store.shortTimer)
-                picker(label: "Long time", value: $store.longTimer)
-                picker(label: "Counter", value: $store.phaseCounter)
-            }
+            picker(label: "Short time", value: $store.shortTimer)
+            picker(label: "Long time", value: $store.longTimer)
+            picker(label: "Counter", value: $store.phaseCounter)
         }
+        .padding(.vertical)
     }
 
     private func picker<T>(
@@ -29,7 +36,9 @@ struct SettingsView: View {
             label: HStack {
                 Text(label)
                 Spacer()
+                #if !os(watchOS)
                 Text("\(value.wrappedValue)")
+                #endif
             }
 
         ) {
@@ -37,7 +46,7 @@ struct SettingsView: View {
                 Text("\($0)").tag(Optional($0))
             }
         }
-        .pickerStyle(MenuPickerStyle())
+        .pickerStyle(pickerStyle)
     }
 }
 

@@ -9,4 +9,9 @@
 These features will be implemented in Apple Watch app
 - Heart rate monitoring
 
-![](Assets/Release_iOS_1.0.0001.jpeg)
+## watchOS
+![](Assets/Release_watchOS_1.0.0001_1.png)
+![](Assets/Release_watchOS_1.0.0001_2.png)
+
+## iOS
+![](Assets/Release_iOS_1.0.0001.png)
