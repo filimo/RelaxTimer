@@ -6,4 +6,7 @@
 
 ### iOS version is under development, Apple Watch version will come in the future
 
+These features will be implemented in Apple Watch app
+- Heart rate monitoring
+
 ![](Assets/Release_iOS_1.0.0001.jpeg)
