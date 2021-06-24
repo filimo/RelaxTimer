@@ -1,5 +1,7 @@
 # RelaxTimer
 
+## [Если у вас есть вопросы по SwiftUI и другим новым frameworks](https://t.me/swift_ui) <br>
+
 ### Timer for progressive muscle relaxation.
 
 [Relaxation Techniques for Health](https://www.nccih.nih.gov/health/relaxation-techniques-for-health)
